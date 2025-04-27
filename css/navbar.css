@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 0 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+  }
+  
+  .logo a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 1.1em 0;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    position: relative;
+  }
+  
+  .menu > li > a {
+    display: block;
+    padding: 1.1em 2em 1.3em;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .menu > li > a:hover {
+    color: #fff;
+  }
+  
+  /* Dropdown styles */
+  .menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #8e2a20;
+    padding: 5px 0;
+    white-space: nowrap;
+    font-size: 0.8em;
+    font-weight: 400;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .menu li:hover > ul {
+    display: block;
+  }
+  
+  .menu li ul li a {
+    padding: 0.8em 1.2em;
+    color: #fff;
+    text-transform: none;
+    opacity: 0.8;
+    display: block;
+  }
+  
+  .menu li ul li a:hover {
+    opacity: 1;
+  }
+  
+  /* Nested dropdown styles */
+  .menu li ul ul {
+    top: 0;
+    left: 100%;
+    background-color: #962d22;
+  }
+  
